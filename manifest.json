@@ -1,11 +1,11 @@
 {
-  "name": "Biashara AI — Making Africa's Invisible Economy Visible",
-  "short_name": "Biashara AI",
-  "description": "Economic intelligence from Africa's informal economy. Msaidizi — a free voice-based AI assistant for informal workers.",
+  "name": "Msaidizi — Free Business Assistant for Market Workers",
+  "short_name": "Msaidizi",
+  "description": "Free voice-based business assistant for mama mbogas, dukawallahs, and market vendors. Track sales, profit, and debts in Swahili — offline.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#FFFBF3",
-  "theme_color": "#E8772E",
+  "background_color": "#0A0F1C",
+  "theme_color": "#D4AF37",
   "orientation": "portrait",
   "scope": "/",
   "lang": "en",
@@ -37,12 +37,7 @@
     {
       "name": "Download Msaidizi APK",
       "short_name": "Download",
-      "url": "https://github.com/msaidizi/biashara-ai/releases/latest/download/msaidizi.apk"
-    },
-    {
-      "name": "For Buyers",
-      "short_name": "Buyers",
-      "url": "/#buyers"
+      "url": "/#download"
     }
   ]
 }
