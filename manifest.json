@@ -1,7 +1,7 @@
 {
-  "name": "Msaidizi — Business Assistant",
-  "short_name": "Msaidizi",
-  "description": "Free offline business app for Africa's informal workers. Record sales by voice, track profit, speak Swahili.",
+  "name": "Biashara AI — Making Africa's Invisible Economy Visible",
+  "short_name": "Biashara AI",
+  "description": "Economic intelligence from Africa's informal economy. Msaidizi — a free voice-based AI assistant for informal workers.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#FFFBF3",
@@ -35,9 +35,14 @@
   ],
   "shortcuts": [
     {
-      "name": "Download APK",
+      "name": "Download Msaidizi APK",
       "short_name": "Download",
       "url": "https://github.com/msaidizi/biashara-ai/releases/latest/download/msaidizi.apk"
+    },
+    {
+      "name": "For Buyers",
+      "short_name": "Buyers",
+      "url": "/#buyers"
     }
   ]
 }

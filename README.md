@@ -49,4 +49,4 @@ python3 -m http.server 8000
 
 ## License
 
-Proprietary — Biashara AI Ltd
+Proprietary — Biashara Intelligence
