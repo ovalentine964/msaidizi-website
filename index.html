@@ -1,607 +1,394 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Msaidizi — Free Business Assistant for Market Workers | Biashara Intelligence</title>
-  <meta name="description" content="Msaidizi is a free voice-based business assistant for mama mbogas, dukawallahs, and market vendors. Track sales, profit, and debts — in Swahili, offline, on any Android phone.">
-  <meta name="keywords" content="Msaidizi, free business app, mama mboga, dukawallah, market vendor, Swahili business app, offline POS, Kenya, Migori, informal economy, voice business assistant">
-  <meta name="author" content="Biashara Intelligence">
-  <meta name="theme-color" content="#E8772E">
-
-  <!-- Open Graph -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://biashara.ai/">
-  <meta property="og:title" content="Msaidizi — Free Business Assistant for Market Workers">
-  <meta property="og:description" content="Speak your sales in Swahili. Track your profit. Grow your business. Free, offline, on any Android phone.">
-  <meta property="og:image" content="https://biashara.ai/assets/og-image.png">
-  <meta property="og:locale" content="en_KE">
-  <meta property="og:locale:alternate" content="sw_KE">
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Msaidizi — Free Business Assistant for Market Workers">
-  <meta name="twitter:description" content="Speak your sales in Swahili. Track your profit. Grow your business. Free, offline, on any Android phone.">
-  <meta name="twitter:image" content="https://biashara.ai/assets/og-image.png">
-
-  <!-- PWA -->
-  <link rel="manifest" href="manifest.json">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📱</text></svg>">
-  <link rel="apple-touch-icon" href="assets/icon-192.png">
-
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-  <!-- Styles -->
-  <link rel="stylesheet" href="style.css">
-
-  <!-- Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "MobileApplication",
-    "name": "Msaidizi",
-    "description": "Free voice-based business assistant for informal workers. Track sales, profit, and debts in Swahili — offline.",
-    "applicationCategory": "BusinessApplication",
-    "operatingSystem": "Android",
-    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-    "author": {
-      "@type": "Organization",
-      "name": "Biashara Intelligence",
-      "url": "https://biashara.ai",
-      "foundingDate": "2026",
-      "founder": { "@type": "Person", "name": "Valentine Owuor" },
-      "address": { "@type": "PostalAddress", "addressLocality": "Migori", "addressCountry": "KE" }
-    },
-    "inLanguage": ["en", "sw"]
-  }
-  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Biashara Intelligence — Economic intelligence for Africa's informal economy. Making 200 million invisible workers visible through data.">
+    <meta name="keywords" content="Africa, informal economy, MSME, economic intelligence, data analytics, Kenya, financial inclusion">
+    <meta name="author" content="Biashara Intelligence">
+    <meta property="og:title" content="Biashara Intelligence — Economic Intelligence for Africa's Informal Economy">
+    <meta property="og:description" content="200 million workers. $1.3 trillion in output. Zero data. Until now.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>Biashara Intelligence — Economic Intelligence for Africa's Informal Economy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- NAVIGATION -->
-  <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
-    <div class="container nav__inner">
-      <a href="#hero" class="nav__logo" aria-label="Msaidizi Home">
-        <span class="nav__logo-mark">📱</span>
-        <span class="nav__logo-text">
-          <strong>Msaidizi</strong>
-          <small>by Biashara Intelligence</small>
-        </span>
-      </a>
-
-      <ul class="nav__links" id="nav-links">
-        <li><a href="#how" data-i18n="nav.how" data-i18n-en="How It Works">How It Works</a></li>
-        <li><a href="#workers" data-i18n="nav.features" data-i18n-en="Features">Features</a></li>
-        <li><a href="#about" data-i18n="nav.about" data-i18n-en="About">About</a></li>
-        <li><a href="#faq" data-i18n="nav.faq" data-i18n-en="FAQ">FAQ</a></li>
-        <li><a href="#contact" data-i18n="nav.contact" data-i18n-en="Contact">Contact</a></li>
-      </ul>
-
-      <div class="nav__actions">
-        <div class="lang-toggle" role="group" aria-label="Language selector">
-          <button class="lang-toggle__btn active" data-lang="en" aria-pressed="true">EN</button>
-          <button class="lang-toggle__btn" data-lang="sw" aria-pressed="false">SW</button>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-icon">◆</span>
+                <span class="logo-text">Biashara<span class="logo-accent"> Intelligence</span></span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#about" data-en="About" data-sw="Kuhusu">About</a></li>
+                <li><a href="#what-we-do" data-en="What We Do" data-sw="Tunachofanya">What We Do</a></li>
+                <li><a href="#products" data-en="Products" data-sw="Bidhaa">Products</a></li>
+                <li><a href="#insights" data-en="Insights" data-sw="Ufahamu">Insights</a></li>
+                <li><a href="#community" data-en="Community" data-sw="Jamii">Community</a></li>
+                <li><a href="#contact" data-en="Contact" data-sw="Wasiliana">Contact</a></li>
+                <li class="nav-lang">
+                    <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+                        <span class="lang-active">EN</span> / <span class="lang-inactive">SW</span>
+                    </button>
+                </li>
+            </ul>
         </div>
-        <a href="#download" class="nav__cta btn btn--sm btn--primary" data-i18n="nav.download" data-i18n-en="Download">Download</a>
-        <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
-    </div>
+    </nav>
 
-    <div class="nav__mobile" id="mobile-menu" role="menu">
-      <a href="#how" data-i18n="nav.how" data-i18n-en="How It Works">How It Works</a>
-      <a href="#workers" data-i18n="nav.features" data-i18n-en="Features">Features</a>
-      <a href="#about" data-i18n="nav.about" data-i18n-en="About">About</a>
-      <a href="#faq" data-i18n="nav.faq" data-i18n-en="FAQ">FAQ</a>
-      <a href="#contact" data-i18n="nav.contact" data-i18n-en="Contact">Contact</a>
-      <a href="#download" class="btn btn--primary" data-i18n="nav.download" data-i18n-en="Download">Download</a>
-    </div>
-  </nav>
-
-  <!-- HERO — Worker-focused -->
-  <section class="hero" id="hero">
-    <div class="hero__bg">
-      <div class="hero__gradient"></div>
-    </div>
-    <div class="container">
-      <div class="hero__content">
-        <div class="hero__badge fade-in">
-          <span class="hero__badge-dot"></span>
-          <span data-i18n="hero.badge" data-i18n-en="🇰🇪 Built in Migori · Free for workers">🇰🇪 Built in Migori · Free for workers</span>
-        </div>
-
-        <h1 class="hero__title fade-in">
-          <span data-i18n="hero.title.line1" data-i18n-en="Your business">Your business</span>
-          <span class="hero__title--accent" data-i18n="hero.title.line2" data-i18n-en="deserves a CFO.">deserves a CFO.</span>
-        </h1>
-
-        <p class="hero__subtitle fade-in" data-i18n="hero.subtitle" data-i18n-en="Msaidizi is a free voice-based assistant for mama mbogas, dukawallahs, and market vendors. Speak your sales in Swahili — Msaidizi tracks your profit, remembers your debts, and helps you grow.">
-          Msaidizi is a free voice-based assistant for mama mbogas, dukawallahs, and market vendors. Speak your sales in Swahili — Msaidizi tracks your profit, remembers your debts, and helps you grow.
-        </p>
-
-        <div class="hero__cta fade-in">
-          <a href="#download" class="btn btn--primary btn--lg btn--pulse">
-            <span class="btn__icon">⬇️</span>
-            <span data-i18n="hero.cta.download" data-i18n-en="Download Free">Download Free</span>
-          </a>
-          <a href="#how" class="btn btn--outline btn--lg">
-            <span data-i18n="hero.cta.learn" data-i18n-en="See How It Works">See How It Works</span>
-          </a>
-        </div>
-
-        <div class="hero__trust fade-in">
-          <div class="hero__trust-item">
-            <span class="hero__trust-icon">🆓</span>
-            <span data-i18n="hero.trust.free" data-i18n-en="Free forever">Free forever</span>
-          </div>
-          <div class="hero__trust-item">
-            <span class="hero__trust-icon">📡</span>
-            <span data-i18n="hero.trust.offline" data-i18n-en="Works offline">Works offline</span>
-          </div>
-          <div class="hero__trust-item">
-            <span class="hero__trust-icon">🎤</span>
-            <span data-i18n="hero.trust.voice" data-i18n-en="Voice in Swahili">Voice in Swahili</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Hero visual — phone mockup -->
-      <div class="hero__visual fade-in" aria-hidden="true">
-        <div class="hero__phone">
-          <div class="hero__phone-screen">
-            <div class="hero__phone-header">
-              <span>Msaidizi 📱</span>
-              <span class="hero__phone-time">9:41</span>
+    <!-- Hero Section -->
+    <header class="hero" id="hero">
+        <div class="hero-bg-pattern"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <p class="hero-eyebrow" data-en="Economic Intelligence Platform" data-sw="Jukwaa la Ufahamu wa Kiuchumi">Economic Intelligence Platform</p>
+                <h1 class="hero-title" data-en="Economic Intelligence for Africa's Informal Economy" data-sw="Ufahamu wa Kiuchumi kwa Uchumi Isiyo Rasmi wa Afrika">
+                    Economic Intelligence for Africa's <span class="text-accent">Informal Economy</span>
+                </h1>
+                <p class="hero-subtitle" data-en="200 million workers. $1.3 trillion in output. Zero data. Until now." data-sw="Wafanyikazi milioni 200. Trilioni $1.3 katika pato. Data zero. Hadi sasa.">
+                    200 million workers. $1.3 trillion in output. Zero data. <strong>Until now.</strong>
+                </p>
+                <div class="hero-ctas">
+                    <a href="#products" class="btn btn-primary" data-en="Explore Intelligence" data-sw="Chunguza Ufahamu">Explore Intelligence</a>
+                    <a href="#products" class="btn btn-outline" data-en="Download Msaidizi" data-web="Pakua Msaidizi">Download Msaidizi</a>
+                </div>
             </div>
-            <div class="hero__chat">
-              <div class="hero__chat-bubble hero__chat-bubble--user">
-                "Leo nimeuza vitu 5 kwa elfu kumi kila moja"
-              </div>
-              <div class="hero__chat-bubble hero__chat-bubble--ai">
-                Sawa! Mauzo ya leo: <strong>KES 50,000</strong><br>
-                Gharama: KES 30,000<br>
-                Faida: <strong>KES 20,000</strong> 🎉
-              </div>
-              <div class="hero__chat-bubble hero__chat-bubble--user">
-                "Naomba deni ya Bi Mwana"
-              </div>
-              <div class="hero__chat-bubble hero__chat-bubble--ai">
-                Bi Mwana anadaiwa <strong>KES 5,000</strong>.<br>
-                Aliahidi kulipa Ijumaa. Nikumbushe?
-              </div>
+            <div class="hero-stats">
+                <div class="stat-card">
+                    <span class="stat-number">200M+</span>
+                    <span class="stat-label" data-en="Informal Workers" data-sw="Wafanyikazi Wasio Rasmi">Informal Workers</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">$1.3T</span>
+                    <span class="stat-label" data-en="Economic Output" data-sw="Pato la Kiuchumi">Economic Output</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">0</span>
+                    <span class="stat-label" data-en="Data Points Before Us" data-sw="Nukta za Data Kabla Yetu">Data Points Before Us</span>
+                </div>
             </div>
-            <div class="hero__phone-input">
-              <span>🎤 Sema na Msaidizi...</span>
+        </div>
+        <div class="hero-scroll-indicator">
+            <span data-en="Scroll to explore" data-sw="Tembeza kuchunguza">Scroll to explore</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-eyebrow" data-en="About Us" data-sw="Kuhusu Sisi">About Us</p>
+                <h2 class="section-title" data-en="Making Africa's Invisible Economy Visible" data-sw="Kufanya Uchumi Usioonekana wa Afrika Uonekane">Making Africa's Invisible Economy <span class="text-accent">Visible</span></h2>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- HOW IT WORKS — Simple 3 steps -->
-  <section class="section section--alt" id="how">
-    <div class="container">
-      <div class="section__header fade-in">
-        <span class="section__label" data-i18n="how.label" data-i18n-en="How It Works">How It Works</span>
-        <h2 class="section__title" data-i18n="how.title" data-i18n-en="Three steps. That's it.">Three steps. <span>That's it.</span></h2>
-        <p class="section__desc" data-i18n="how.desc" data-i18n-en="No complicated forms. No typing. Just speak to Msaidizi like you'd speak to a friend.">
-          No complicated forms. No typing. Just speak to Msaidizi like you'd speak to a friend.
-        </p>
-      </div>
-
-      <div class="steps">
-        <div class="step fade-in">
-          <div class="step__number">1</div>
-          <div class="step__icon">🎤</div>
-          <h3 class="step__title" data-i18n="how.step1.title" data-i18n-en="Speak">Speak</h3>
-          <p class="step__desc" data-i18n="how.step1.desc" data-i18n-en="Tell Msaidizi your sales in Swahili. &quot;Nimeuza vitu 5 kwa elfu kumi.&quot;">Tell Msaidizi your sales in Swahili. "Nimeuza vitu 5 kwa elfu kumi."</p>
-        </div>
-        <div class="step__arrow" aria-hidden="true">→</div>
-        <div class="step fade-in">
-          <div class="step__number">2</div>
-          <div class="step__icon">🧠</div>
-          <h3 class="step__title" data-i18n="how.step2.title" data-i18n-en="Understand">Understand</h3>
-          <p class="step__desc" data-i18n="how.step2.desc" data-i18n-en="Msaidizi records, calculates profit, and remembers debts for you.">Msaidizi records, calculates profit, and remembers debts for you.</p>
-        </div>
-        <div class="step__arrow" aria-hidden="true">→</div>
-        <div class="step fade-in">
-          <div class="step__number">3</div>
-          <div class="step__icon">📈</div>
-          <h3 class="step__title" data-i18n="how.step3.title" data-i18n-en="Grow">Grow</h3>
-          <p class="step__desc" data-i18n="how.step3.desc" data-i18n-en="See your profit. Make better decisions. Grow your business.">See your profit. Make better decisions. Grow your business.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- THE PROBLEM — Simplified, worker-focused -->
-  <section class="section section--dark" id="problem">
-    <div class="container">
-      <div class="section__header fade-in">
-        <span class="section__label" data-i18n="problem.label" data-i18n-en="The Problem">The Problem</span>
-        <h2 class="section__title" data-i18n="problem.title" data-i18n-en="You work hard. But do you know if you're making profit?">You work hard. <span>But do you know if you're making profit?</span></h2>
-      </div>
-
-      <div class="problem__grid">
-        <div class="problem__card fade-in">
-          <div class="problem__card-icon">📓</div>
-          <h3 data-i18n="problem.card1.title" data-i18n-en="Paper records get lost">Paper records get lost</h3>
-          <p data-i18n="problem.card1.desc" data-i18n-en="Notebooks get wet, torn, or forgotten. Your business history disappears.">Notebooks get wet, torn, or forgotten. Your business history disappears.</p>
-        </div>
-        <div class="problem__card fade-in">
-          <div class="problem__card-icon">🧮</div>
-          <h3 data-i18n="problem.card2.title" data-i18n-en="Math is hard when you're busy">Math is hard when you're busy</h3>
-          <p data-i18n="problem.card2.desc" data-i18n-en="Running a market stall means no time to calculate profit. You work all day but don't know if you made money.">Running a market stall means no time to calculate profit. You work all day but don't know if you made money.</p>
-        </div>
-        <div class="problem__card fade-in">
-          <div class="problem__card-icon">🤷</div>
-          <h3 data-i18n="problem.card3.title" data-i18n-en="Debts are forgotten">Debts are forgotten</h3>
-          <p data-i18n="problem.card3.desc" data-i18n-en="Customers buy on credit. You forget who owes what. Money slips away.">Customers buy on credit. You forget who owes what. Money slips away.</p>
-        </div>
-        <div class="problem__card fade-in">
-          <div class="problem__card-icon">🏦</div>
-          <h3 data-i18n="problem.card4.title" data-i18n-en="Banks can't see you">Banks can't see you</h3>
-          <p data-i18n="problem.card4.desc" data-i18n-en="No records means no credit history. No loan. No growth. You're invisible.">No records means no credit history. No loan. No growth. You're invisible.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FEATURES — Worker-focused -->
-  <section class="section" id="workers">
-    <div class="container">
-      <div class="section__header fade-in">
-        <span class="section__label" data-i18n="features.label" data-i18n-en="Features">Features</span>
-        <h2 class="section__title" data-i18n="features.title" data-i18n-en="Built for how you actually work">Built for <span>how you actually work</span></h2>
-      </div>
-
-      <div class="features__grid">
-        <div class="feature fade-in">
-          <div class="feature__icon">🎤</div>
-          <h3 data-i18n="features.voice.title" data-i18n-en="Voice in Swahili">Voice in Swahili</h3>
-          <p data-i18n="features.voice.desc" data-i18n-en="Speak naturally in Swahili or Sheng. No typing, no English required. Just talk.">Speak naturally in Swahili or Sheng. No typing, no English required. Just talk.</p>
-        </div>
-        <div class="feature fade-in">
-          <div class="feature__icon">📡</div>
-          <h3 data-i18n="features.offline.title" data-i18n-en="Works Offline">Works Offline</h3>
-          <p data-i18n="features.offline.desc" data-i18n-en="No internet? No problem. Everything runs on your phone. Zero data costs.">No internet? No problem. Everything runs on your phone. Zero data costs.</p>
-        </div>
-        <div class="feature fade-in">
-          <div class="feature__icon">💰</div>
-          <h3 data-i18n="features.profit.title" data-i18n-en="Profit Tracking">Profit Tracking</h3>
-          <p data-i18n="features.profit.desc" data-i18n-en="See daily profit and loss. Know if you're making money — not just selling.">See daily profit and loss. Know if you're making money — not just selling.</p>
-        </div>
-        <div class="feature fade-in">
-          <div class="feature__icon">👥</div>
-          <h3 data-i18n="features.debts.title" data-i18n-en="Debt Memory">Debt Memory</h3>
-          <p data-i18n="features.debts.desc" data-i18n-en="Msaidizi remembers every debt. Who owes what, when they promised to pay. No more forgotten credit.">Msaidizi remembers every debt. Who owes what, when they promised to pay. No more forgotten credit.</p>
-        </div>
-        <div class="feature fade-in">
-          <div class="feature__icon">📊</div>
-          <h3 data-i18n="features.history.title" data-i18n-en="Business History">Business History</h3>
-          <p data-i18n="features.history.desc" data-i18n-en="See your week, month, and year. Spot patterns. Know your best days and best products.">See your week, month, and year. Spot patterns. Know your best days and best products.</p>
-        </div>
-        <div class="feature fade-in">
-          <div class="feature__icon">🔒</div>
-          <h3 data-i18n="features.privacy.title" data-i18n-en="Your Data Stays Yours">Your Data Stays Yours</h3>
-          <p data-i18n="features.privacy.desc" data-i18n-en="Everything stays on your phone. No one sees your business unless you choose to share.">Everything stays on your phone. No one sees your business unless you choose to share.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- DOWNLOAD CTA — Prominent -->
-  <section class="section section--cta" id="download">
-    <div class="container">
-      <div class="download fade-in">
-        <div class="download__content">
-          <h2 class="download__title" data-i18n="download.title" data-i18n-en="Ready to see your real profit?">Ready to see your <span>real profit?</span></h2>
-          <p class="download__desc" data-i18n="download.desc" data-i18n-en="Download Msaidizi for free. 15MB. Works on any Android phone from 2015 onwards. No ads, no tricks.">
-            Download Msaidizi for free. 15MB. Works on any Android phone from 2015 onwards. No ads, no tricks.
-          </p>
-          <a href="https://github.com/ovalentine964/biashara-intelligence/releases/latest/download/msaidizi.apk" class="btn btn--primary btn--lg btn--pulse" id="download-btn">
-            <span class="btn__icon">⬇️</span>
-            <span data-i18n="download.btn" data-i18n-en="Download Msaidizi APK">Download Msaidizi APK</span>
-          </a>
-          <div class="download__meta" data-i18n="download.meta" data-i18n-en="Android 6.0+ · 15MB · Free forever · No ads">
-            Android 6.0+ · 15MB · Free forever · No ads
-          </div>
-        </div>
-        <div class="download__phone" aria-hidden="true">
-          <div class="download__phone-frame">
-            <div class="download__phone-screen">
-              <div class="download__phone-icon">📱</div>
-              <div class="download__phone-name">Msaidizi</div>
-              <div class="download__phone-version">v0.1.0</div>
+            <div class="about-grid">
+                <div class="about-content">
+                    <p class="about-lead" data-en="Africa's informal economy employs over 200 million people and generates an estimated $1.3 trillion in annual output. Yet it remains virtually invisible to policymakers, financial institutions, and development organizations." data-sw="Uchumi usio rasmi wa Afrika unaajiri zaidi ya watu milioni 200 na kutengeneza takriban trilioni $1.3 katika pato la mwaka. Bado hauonekani kwa watunga sera, taasisi za kifedha, na mashirika ya maendeleo.">
+                        Africa's informal economy employs over 200 million people and generates an estimated $1.3 trillion in annual output. Yet it remains virtually invisible to policymakers, financial institutions, and development organizations.
+                    </p>
+                    <p data-en="Biashara Intelligence exists to change that. We collect real-time economic data from the ground up — through the workers and businesses themselves — and transform it into actionable intelligence." data-sw="Biashara Intelligence ipo kubadilisha hilo. Tunakusanya data ya kiuchumi ya wakati halisi kutoka chini — kupitia wafanyikazi na biashara wenyewe — na kuibadilisha kuwa ufahamu wa vitendo.">
+                        Biashara Intelligence exists to change that. We collect real-time economic data from the ground up — through the workers and businesses themselves — and transform it into actionable intelligence.
+                    </p>
+                    <div class="about-founder">
+                        <div class="founder-info">
+                            <h4 data-en="Founded by Valentine Owuor" data-sw="Imeanzishwa na Valentine Owuor">Founded by Valentine Owuor</h4>
+                            <p data-en="BSc Economics & Statistics · Migori, Kenya" data-sw="BSc Uchumi & Takwimu · Migori, Kenya">BSc Economics & Statistics · Migori, Kenya</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-mission">
+                    <div class="mission-card">
+                        <h3 data-en="Our Mission" data-sw="Dhamira Yetu">Our Mission</h3>
+                        <p data-en="To build the data infrastructure that Africa's informal economy deserves — enabling better policy, smarter finance, and inclusive growth for 200 million workers." data-sw="Kujenga miundombinu ya data ambayo uchumi usio rasmi wa Afrika unastahili — kuwezesha sera bora, fedha mahiri, na ukuaji jumuishi kwa wafanyikazi milioni 200.">
+                            To build the data infrastructure that Africa's informal economy deserves — enabling better policy, smarter finance, and inclusive growth for 200 million workers.
+                        </p>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- PILOT — Honest, transparent -->
-  <section class="section section--alt" id="pilot">
-    <div class="container">
-      <div class="section__header fade-in">
-        <span class="section__label" data-i18n="pilot.label" data-i18n-en="We're Just Starting">We're Just Starting</span>
-        <h2 class="section__title" data-i18n="pilot.title" data-i18n-en="Honest technology. No fake numbers.">Honest technology. <span>No fake numbers.</span></h2>
-        <p class="section__desc" data-i18n="pilot.desc" data-i18n-en="We're a small team in Migori building something new. We don't have a million users. We don't have fake testimonials. What we have is a real app that solves a real problem — and we're looking for our first 50 workers to try it.">
-          We're a small team in Migori building something new. We don't have a million users. We don't have fake testimonials. What we have is a real app that solves a real problem — and we're looking for our first 50 workers to try it.
-        </p>
-      </div>
-
-      <div class="pilot__grid">
-        <div class="pilot__card fade-in">
-          <div class="pilot__icon">🏪</div>
-          <h3 data-i18n="pilot.card1.title" data-i18n-en="Pilot in Migori Markets">Pilot in Migori Markets</h3>
-          <p data-i18n="pilot.card1.desc" data-i18n-en="We're starting with market vendors in Migori. Real dukawallahs and mama mbogas testing Msaidizi with their daily transactions.">
-            We're starting with market vendors in Migori. Real dukawallahs and mama mbogas testing Msaidizi with their daily transactions.
-          </p>
-        </div>
-        <div class="pilot__card fade-in">
-          <div class="pilot__icon">📊</div>
-          <h3 data-i18n="pilot.card2.title" data-i18n-en="Real Data Only">Real Data Only</h3>
-          <p data-i18n="pilot.card2.desc" data-i18n-en="Every number we publish will come from real transactions. No projections disguised as facts. We'll share actual results as our pilot grows.">
-            Every number we publish will come from real transactions. No projections disguised as facts. We'll share actual results as our pilot grows.
-          </p>
-        </div>
-        <div class="pilot__card fade-in">
-          <div class="pilot__icon">🤝</div>
-          <h3 data-i18n="pilot.card3.title" data-i18n-en="Be One of Our First 50">Be One of Our First 50</h3>
-          <p data-i18n="pilot.card3.desc" data-i18n-en="Are you a market vendor in Migori? Download Msaidizi and help us build something that actually works for workers like you.">
-            Are you a market vendor in Migori? Download Msaidizi and help us build something that actually works for workers like you.
-          </p>
-          <a href="#download" class="btn btn--primary" data-i18n="pilot.join" data-i18n-en="Download & Join">Download & Join</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ABOUT — Honest founder story -->
-  <section class="section" id="about">
-    <div class="container">
-      <div class="about__grid">
-        <div class="about__content fade-in">
-          <span class="section__label" data-i18n="about.label" data-i18n-en="About Us">About Us</span>
-          <h2 class="section__title" data-i18n="about.title" data-i18n-en="Biashara Intelligence — Migori, Kenya">Biashara Intelligence — <span>Migori, Kenya</span></h2>
-
-          <div class="about__mission">
-            <h3 data-i18n="about.mission.title" data-i18n-en="Our Mission">Our Mission</h3>
-            <p class="about__mission-text" data-i18n="about.mission.text" data-i18n-en="Give every informal worker in Africa the tools to understand their own business.">
-              Give every informal worker in Africa the tools to understand their own business.
-            </p>
-          </div>
-
-          <div class="about__story">
-            <h3 data-i18n="about.story.title" data-i18n-en="Our Story">Our Story</h3>
-            <p data-i18n="about.story.p1" data-i18n-en="It started with one question: <strong>Why does my mum's business have no data?</strong>">
-              It started with one question: <strong>Why does my mum's business have no data?</strong>
-            </p>
-            <p data-i18n="about.story.p2" data-i18n-en="She runs a small business — works harder than any CEO. But she has no records, no profit tracking, no way to prove her income to a bank. Millions of workers across Africa are in the same situation.">
-              She runs a small business — works harder than any CEO. But she has no records, no profit tracking, no way to prove her income to a bank. Millions of workers across Africa are in the same situation.
-            </p>
-            <p data-i18n="about.story.p3" data-i18n-en="Msaidizi is our answer. A free, voice-based tool that gives workers the business intelligence that big companies take for granted. We're building it from Migori — not Nairobi, not Silicon Valley — because the people who need it most are right here.">
-              Msaidizi is our answer. A free, voice-based tool that gives workers the business intelligence that big companies take for granted. We're building it from Migori — not Nairobi, not Silicon Valley — because the people who need it most are right here.
-            </p>
-          </div>
-        </div>
-
-        <div class="about__team fade-in">
-          <h3 data-i18n="about.team.title" data-i18n-en="The Team">The Team</h3>
-          <div class="about__team-grid">
-            <div class="about__team-card">
-              <div class="about__team-avatar">👨‍💻</div>
-              <h4>Valentine Owuor</h4>
-              <p class="about__team-role" data-i18n="about.team.valentine.role" data-i18n-en="Founder & CEO">Founder & CEO</p>
-              <p class="about__team-bio" data-i18n="about.team.valentine.bio" data-i18n-en="BSc Economics & Statistics. From Migori. Building tools for the workers the world ignores.">
-                BSc Economics & Statistics. From Migori. Building tools for the workers the world ignores.
-              </p>
+    <!-- What We Do Section -->
+    <section class="section what-we-do" id="what-we-do">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-eyebrow" data-en="What We Do" data-sw="Tunachofanya">What We Do</p>
+                <h2 class="section-title" data-en="From the Ground to Insight" data-sw="Kutoka Chini Kwa Maarifa">From the Ground to <span class="text-accent">Insight</span></h2>
+                <p class="section-desc" data-en="Our three-pillar approach transforms raw economic activity into intelligence that drives decisions." data-sw="Mbinu yetu ya nguzo tatu inabadilisha shughuli mbichi za kiuchumi kuwa ufahamu unaofanya maamuzi.">
+                    Our three-pillar approach transforms raw economic activity into intelligence that drives decisions.
+                </p>
             </div>
-            <div class="about__team-card about__team-card--placeholder">
-              <div class="about__team-avatar">👤</div>
-              <h4 data-i18n="about.team.future.name" data-i18n-en="You?">You?</h4>
-              <p class="about__team-role" data-i18n="about.team.future.role" data-i18n-en="Future Team Member">Future Team Member</p>
-              <p class="about__team-bio" data-i18n="about.team.future.bio" data-i18n-en="We're looking for mission-driven people. Interested? Get in touch.">
-                We're looking for mission-driven people. Interested? Get in touch.
-              </p>
+            <div class="pillars-grid">
+                <div class="pillar-card">
+                    <div class="pillar-number">01</div>
+                    <div class="pillar-icon">📱</div>
+                    <h3 data-en="Data Collection" data-sw="Ukusanyaji Data">Data Collection</h3>
+                    <p data-en="Msaidizi — our voice-based, offline-first mobile app — enables informal workers to log transactions in their own language, no literacy required." data-sw="Msaidizi — programu yetu ya rununu inayotumia sauti, inayofanya kazi nje ya mtandao — inawawezesha wafanyikazi wasio rasmi kurekodi miamala kwa lugha yao, bila hitaji la kusoma.">
+                        <strong>Msaidizi</strong> — our voice-based, offline-first mobile app — enables informal workers to log transactions in their own language, no literacy required.
+                    </p>
+                </div>
+                <div class="pillar-card">
+                    <div class="pillar-number">02</div>
+                    <div class="pillar-icon">🧠</div>
+                    <h3 data-en="Intelligence Generation" data-sw="Utengenezaji Ufahamu">Intelligence Generation</h3>
+                    <p data-en="Cloud-based AI transforms millions of micro-transactions into structured economic indicators — demand patterns, income flows, market dynamics." data-sw="AI inayotegemea wingu inabadilisha miamala midogo milioni kuwa viashiria vya kiuchumi vilivyopangwa — mifumo ya mahitaji, mtiririko wa mapato, mienendo ya soko.">
+                        Cloud-based AI transforms millions of micro-transactions into structured economic indicators — demand patterns, income flows, market dynamics.
+                    </p>
+                </div>
+                <div class="pillar-card">
+                    <div class="pillar-number">03</div>
+                    <div class="pillar-icon">📊</div>
+                    <h3 data-en="Intelligence Delivery" data-sw="Utoaji Ufahamu">Intelligence Delivery</h3>
+                    <p data-en="Reports, APIs, and dashboards deliver actionable insights to governments, financial institutions, FMCG companies, and development organizations." data-sw="Ripoti, APIs, na dashibodi zinatoa ufahamu wa vitendo kwa serikali, taasisi za kifedha, makampuni ya FMCG, na mashirika ya maendeleo.">
+                        Reports, APIs, and dashboards deliver actionable insights to governments, financial institutions, FMCG companies, and development organizations.
+                    </p>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- FAQ -->
-  <section class="section section--alt" id="faq">
-    <div class="container">
-      <div class="section__header fade-in">
-        <span class="section__label" data-i18n="faq.label" data-i18n-en="FAQ">FAQ</span>
-        <h2 class="section__title" data-i18n="faq.title" data-i18n-en="Questions? We've got answers.">Questions? <span>We've got answers.</span></h2>
-      </div>
-
-      <div class="faq__grid">
-        <div class="faq__item fade-in">
-          <div class="faq__question" onclick="this.parentElement.classList.toggle('faq__item--open')">
-            <h4 data-i18n="faq.q1" data-i18n-en="Is Msaidizi really free?">Is Msaidizi really free?</h4>
-            <span class="faq__toggle">+</span>
-          </div>
-          <div class="faq__answer">
-            <p data-i18n="faq.a1" data-i18n-en="Yes. Msaidizi is free forever for workers. No hidden charges, no premium version, no ads. We believe the people who need it most shouldn't have to pay for it.">Yes. Msaidizi is free forever for workers. No hidden charges, no premium version, no ads. We believe the people who need it most shouldn't have to pay for it.</p>
-          </div>
+    <!-- Products Section -->
+    <section class="section products" id="products">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-eyebrow" data-en="Our Products" data-sw="Bidhaa Zetu">Our Products</p>
+                <h2 class="section-title" data-en="Intelligence Products" data-sw="Bidhaa za Ufahamu">Intelligence <span class="text-accent">Products</span></h2>
+                <p class="section-desc" data-en="Purpose-built solutions for every stakeholder in Africa's economic ecosystem." data-sw="Suluhisho zilizojengwa kwa kila mdau katika mfumo wa kiuchumi wa Afrika.">
+                    Purpose-built solutions for every stakeholder in Africa's economic ecosystem.
+                </p>
+            </div>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-icon">📈</div>
+                    <h3>Soko Pulse</h3>
+                    <p class="product-tagline" data-en="FMCG Demand Forecasting" data-sw="Utabiri wa Mahitaji ya FMCG">FMCG Demand Forecasting</p>
+                    <p data-en="Real-time demand signals from informal markets. Help FMCG companies optimize distribution, reduce waste, and reach underserved markets with confidence." data-sw="Za mahitaji za wakati halisi kutoka masoko yasiyo rasmi. Saidia makampuni ya FMCG kuboresha usambazaji, kupunguza upotevu, na kufika masoko yaliyopunguzwa kwa ujasiri.">
+                        Real-time demand signals from informal markets. Help FMCG companies optimize distribution, reduce waste, and reach underserved markets with confidence.
+                    </p>
+                    <span class="product-status" data-en="Coming Soon" data-sw="Inakuja Hivi Karibuni">Coming Soon</span>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">🏛️</div>
+                    <h3>Biashara Pulse</h3>
+                    <p class="product-tagline" data-en="Government MSME Activity Index" data-sw="Kidata cha Shughuli za MSME za Serikali">Government MSME Activity Index</p>
+                    <p data-en="A live index of micro and small business activity across regions. Empower policymakers with real data for evidence-based economic planning." data-sw="Kidata hai cha shughuli za biashara ndogo na ndogo katika mikoa. Wawezeshe watunga sera na data halisi kwa mipango ya kiuchumi inayotegemea ushahidi.">
+                        A live index of micro and small business activity across regions. Empower policymakers with real data for evidence-based economic planning.
+                    </p>
+                    <span class="product-status" data-en="Coming Soon" data-sw="Inakuja Hivi Karibuni">Coming Soon</span>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">💳</div>
+                    <h3>Alama Score</h3>
+                    <p class="product-tagline" data-en="Credit Scoring for the Unbanked" data-sw="Ukadirifu wa Mkopo kwa Wasio na Benki">Credit Scoring for the Unbanked</p>
+                    <p data-en="Alternative credit scoring using transaction data from informal economic activity. Unlock financial access for millions without formal banking history." data-sw="Ukadirifu mbadala wa mkopo kwa kutumia data ya miamala kutoka shughuli za kiuchumi zisizo rasmi. Fungua upatikanaji wa kifedha kwa mamilioni bila historia rasmi ya benki.">
+                        Alternative credit scoring using transaction data from informal economic activity. Unlock financial access for millions without formal banking history.
+                    </p>
+                    <span class="product-status" data-en="Coming Soon" data-sw="Inakuja Hivi Karibuni">Coming Soon</span>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">🌍</div>
+                    <h3>Jamii Insights</h3>
+                    <p class="product-tagline" data-en="NGO Financial Inclusion Metrics" data-sw="Vipimo vya Ujumuishaji wa Kifedha vya NGO">NGO Financial Inclusion Metrics</p>
+                    <p data-en="Measure real financial inclusion impact at the community level. Track how interventions translate into actual economic participation." data-sw="Pima athari halisi ya ujumuishaji wa kifedha katika ngazi ya jamii. Fuatilia jinsi hatua zinavyobadilika kuwa ushiriki halisi wa kiuchumi.">
+                        Measure real financial inclusion impact at the community level. Track how interventions translate into actual economic participation.
+                    </p>
+                    <span class="product-status" data-en="Coming Soon" data-sw="Inakuja Hivi Karibuni">Coming Soon</span>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="faq__item fade-in">
-          <div class="faq__question" onclick="this.parentElement.classList.toggle('faq__item--open')">
-            <h4 data-i18n="faq.q2" data-i18n-en="What phone do I need?">What phone do I need?</h4>
-            <span class="faq__toggle">+</span>
-          </div>
-          <div class="faq__answer">
-            <p data-i18n="faq.a2" data-i18n-en="Any Android phone with 2GB+ RAM running Android 6.0 or higher. Samsung A15, Tecno Spark, Xiaomi Redmi, Nokia — the phones most Kenyans already own. Msaidizi is only 15MB.">Any Android phone with 2GB+ RAM running Android 6.0 or higher. Samsung A15, Tecno Spark, Xiaomi Redmi, Nokia — the phones most Kenyans already own. Msaidizi is only 15MB.</p>
-          </div>
+    <!-- Msaidizi App Section -->
+    <section class="section msaidizi" id="msaidizi">
+        <div class="container">
+            <div class="msaidizi-grid">
+                <div class="msaidizi-content">
+                    <p class="section-eyebrow" data-en="Our Data Engine" data-sw=" injini Yetu ya Data">Our Data Engine</p>
+                    <h2 class="section-title" data-en="Meet Msaidizi" data-sw="Kutana na Msaidizi">Meet <span class="text-accent">Msaidizi</span></h2>
+                    <p data-en="Msaidizi ('Helper' in Swahili) is our voice-based mobile application designed for Africa's informal workers. It captures economic activity through simple voice notes — no typing, no literacy barriers, no internet required." data-sw="Msaidizi ni programu yetu ya rununu inayotumia sauti iliyobuniwa kwa wafanyikazi wasio rasmi wa Afrika. Inashika shughuli za kiuchumi kupitia noti rahisi za sauti — bila kuchapa, bila vizingiti vya kusoma, bila hitaji la mtandao.">
+                        <strong>Msaidizi</strong> ('Helper' in Swahili) is our voice-based mobile application designed for Africa's informal workers. It captures economic activity through simple voice notes — no typing, no literacy barriers, no internet required.
+                    </p>
+                    <ul class="msaidizi-features">
+                        <li data-en="Voice-first: speak in your language" data-sw="Sauti kwanza: ongea kwa lugha yako">Voice-first: speak in your language</li>
+                        <li data-en="Offline-first: works without internet" data-sw="Nje ya mtandao kwanza: inafanya kazi bila mtandao">Offline-first: works without internet</li>
+                        <li data-en="Privacy-first: your data, your control" data-sw="Faragha kwanza: data yako, udhibiti wako">Privacy-first: your data, your control</li>
+                        <li data-en="Built in Migori, for Migori, for Africa" data-sw="Imejengwa Migori, kwa Migori, kwa Afrika">Built in Migori, for Migori, for Africa</li>
+                    </ul>
+                </div>
+                <div class="msaidizi-visual">
+                    <div class="phone-mockup">
+                        <div class="phone-screen">
+                            <div class="app-header">Msaidizi</div>
+                            <div class="app-body">
+                                <div class="app-greeting" data-en="Good morning, Mama!" data-sw="Habari za asubuhi, Mama!">Good morning, Mama!</div>
+                                <div class="app-prompt" data-en="Tap to record today's sales" data-sw="Gusa kurekodi mauzo ya leo">Tap to record today's sales</div>
+                                <div class="app-mic">🎤</div>
+                                <div class="app-activity">
+                                    <div class="activity-item">
+                                        <span data-en="Tomatoes, 3kg" data-sw="Nyanya, 3kg">Tomatoes, 3kg</span>
+                                        <span class="activity-amount">KES 450</span>
+                                    </div>
+                                    <div class="activity-item">
+                                        <span data-en="Onions, 2kg" data-sw="Vitunguu, 2kg">Onions, 2kg</span>
+                                        <span class="activity-amount">KES 200</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="faq__item fade-in">
-          <div class="faq__question" onclick="this.parentElement.classList.toggle('faq__item--open')">
-            <h4 data-i18n="faq.q3" data-i18n-en="Is my data safe?">Is my data safe?</h4>
-            <span class="faq__toggle">+</span>
-          </div>
-          <div class="faq__answer">
-            <p data-i18n="faq.a3" data-i18n-en="Your data stays on your phone. Voice recordings are processed on-device and deleted. No one sees your business unless you choose to share. We comply with Kenya's Data Protection Act 2019.">Your data stays on your phone. Voice recordings are processed on-device and deleted. No one sees your business unless you choose to share. We comply with Kenya's Data Protection Act 2019.</p>
-          </div>
+    <!-- Insights / News Section -->
+    <section class="section insights" id="insights">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-eyebrow" data-en="Insights & News" data-sw="Ufahamu & Habari">Insights & News</p>
+                <h2 class="section-title" data-en="Stay Informed" data-sw="Kaa Ujulishwe">Stay <span class="text-accent">Informed</span></h2>
+                <p class="section-desc" data-en="Research, analysis, and stories from Africa's informal economy." data-sw="Uchambuzi, uchambuzi, na hadithi kutoka uchumi usio rasmi wa Afrika.">
+                    Research, analysis, and stories from Africa's informal economy.
+                </p>
+            </div>
+            <div class="insights-coming-soon">
+                <div class="coming-soon-icon">📝</div>
+                <h3 data-en="Insights Coming Soon" data-sw="Ufahamu Unakuja Hivi Karibuni">Insights Coming Soon</h3>
+                <p data-en="We're preparing our first research reports, market analyses, and community stories. Sign up for our newsletter to be the first to know." data-sw="Tunatayarisha ripoti zetu za kwanza za utafiti, uchambuzi wa soko, na hadithi za jamii. Jisajili kwa jarida letu kuwa wa kwanza kujua.">
+                    We're preparing our first research reports, market analyses, and community stories. Sign up for our newsletter to be the first to know.
+                </p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="your@email.com" required aria-label="Email address">
+                    <button type="submit" class="btn btn-primary btn-sm" data-en="Subscribe" data-sw="Jiandikishe">Subscribe</button>
+                </form>
+            </div>
         </div>
+    </section>
 
-        <div class="faq__item fade-in">
-          <div class="faq__question" onclick="this.parentElement.classList.toggle('faq__item--open')">
-            <h4 data-i18n="faq.q4" data-i18n-en="Do I need internet?">Do I need internet?</h4>
-            <span class="faq__toggle">+</span>
-          </div>
-          <div class="faq__answer">
-            <p data-i18n="faq.a4" data-i18n-en="No. Msaidizi works 100% offline. The AI runs on your phone. You only need internet if you want to back up your data (optional).">No. Msaidizi works 100% offline. The AI runs on your phone. You only need internet if you want to back up your data (optional).</p>
-          </div>
+    <!-- Community Section -->
+    <section class="section community" id="community">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-eyebrow" data-en="Community" data-sw="Jamii">Community</p>
+                <h2 class="section-title" data-en="Join the Movement" data-sw="Jiunge na Harakati">Join the <span class="text-accent">Movement</span></h2>
+            </div>
+            <div class="community-grid">
+                <div class="community-card">
+                    <div class="community-icon">💬</div>
+                    <h3 data-en="WhatsApp Community" data-sw="Jamii ya WhatsApp">WhatsApp Community</h3>
+                    <p data-en="Join our early adopters community on WhatsApp. Get product updates, share feedback, and connect with other informal economy stakeholders." data-sw="Jiunge na jamii yetu ya waanzilishi mapema kwenye WhatsApp. Pata sasisho za bidhaa, shiriki maoni, na unganishwa na wadau wengine wa uchumi usio rasmi.">
+                        Join our early adopters community on WhatsApp. Get product updates, share feedback, and connect with other informal economy stakeholders.
+                    </p>
+                    <a href="#" class="btn btn-outline btn-sm" data-en="Join WhatsApp Group" data-sw="Jiunge na Kikundi cha WhatsApp">Join WhatsApp Group</a>
+                </div>
+                <div class="community-card">
+                    <div class="community-icon">📍</div>
+                    <h3 data-en="Migori Pilot Program" data-sw="Programu ya Majaribio ya Migori">Migori Pilot Program</h3>
+                    <p data-en="We're currently running our pilot in Migori County, Kenya. If you're a market trader, boda-boda rider, or small business owner in Migori, we want to hear from you." data-sw="Kwa sasa tunafanya majaribio yetu katika Kaunti ya Migori, Kenya. Ikiwa wewe ni mfanyabiashara wa soko, mpanda boda-boda, au mmiliki wa biashara ndogo huko Migori, tunataka kusikia kutoka kwako.">
+                        We're currently running our pilot in Migori County, Kenya. If you're a market trader, boda-boda rider, or small business owner in Migori, we want to hear from you.
+                    </p>
+                    <a href="#contact" class="btn btn-outline btn-sm" data-en="Get Involved" data-sw="Jiunge">Get Involved</a>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="faq__item fade-in">
-          <div class="faq__question" onclick="this.parentElement.classList.toggle('faq__item--open')">
-            <h4 data-i18n="faq.q5" data-i18n-en="How is this different from M-Shwari or Tala?">How is this different from M-Shwari or Tala?</h4>
-            <span class="faq__toggle">+</span>
-          </div>
-          <div class="faq__answer">
-            <p data-i18n="faq.a5" data-i18n-en="M-Shwari and Tala lend money. They don't help you run your business. Msaidizi tracks your sales, expenses, profits, and debts. It helps you understand your business first — then (someday) connects you to credit based on real data, not just your M-Pesa history.">M-Shwari and Tala lend money. They don't help you run your business. Msaidizi tracks your sales, expenses, profits, and debts. It helps you understand your business first — then (someday) connects you to credit based on real data, not just your M-Pesa history.</p>
-          </div>
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-eyebrow" data-en="Contact" data-sw="Wasiliana">Contact</p>
+                <h2 class="section-title" data-en="Get in Touch" data-sw="Wasiliana Nasi">Get in <span class="text-accent">Touch</span></h2>
+                <p class="section-desc" data-en="Have a question, partnership idea, or want to join our pilot? We'd love to hear from you." data-sw="Swali, wazo la ushirikiano, au unataka kujiunge na majaribio yetu? Tungependa kusikia kutoka kwako.">
+                    Have a question, partnership idea, or want to join our pilot? We'd love to hear from you.
+                </p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">✉️</div>
+                    <h3 data-en="Email" data-sw="Barua pepe">Email</h3>
+                    <a href="mailto:hello@biasharaintelligence.com">hello@biasharaintelligence.com</a>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">💬</div>
+                    <h3>WhatsApp</h3>
+                    <a href="#">+254 XXX XXX XXX</a>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">𝕏</div>
+                    <h3>Twitter / X</h3>
+                    <a href="#">@BiasharaIntel</a>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">🔗</div>
+                    <h3>LinkedIn</h3>
+                    <a href="#">Biashara Intelligence</a>
+                </div>
+            </div>
+            <div class="contact-location">
+                <p>📍 <span data-en="Migori, Kenya" data-sw="Migori, Kenya">Migori, Kenya</span></p>
+            </div>
         </div>
+    </section>
 
-        <div class="faq__item fade-in">
-          <div class="faq__question" onclick="this.parentElement.classList.toggle('faq__item--open')">
-            <h4 data-i18n="faq.q6" data-i18n-en="Who is behind Msaidizi?">Who is behind Msaidizi?</h4>
-            <span class="faq__toggle">+</span>
-          </div>
-          <div class="faq__answer">
-            <p data-i18n="faq.a6" data-i18n-en="Biashara Intelligence was founded by Valentine Owuor, a BSc Economics & Statistics graduate from Migori. We're based in Migori, Kenya — not Nairobi, not Silicon Valley. We build for the market, from the market.">Biashara Intelligence was founded by Valentine Owuor, a BSc Economics & Statistics graduate from Migori. We're based in Migori, Kenya — not Nairobi, not Silicon Valley. We build for the market, from the market.</p>
-          </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="nav-logo">
+                        <span class="logo-icon">◆</span>
+                        <span class="logo-text">Biashara<span class="logo-accent"> Intelligence</span></span>
+                    </a>
+                    <p data-en="Economic intelligence for Africa's informal economy. Making the invisible, visible." data-sw="Ufahamu wa kiuchumi kwa uchumi usio rasmi wa Afrika. Kufanya usioonekana, uonekane.">
+                        Economic intelligence for Africa's informal economy. Making the invisible, visible.
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <h4 data-en="Quick Links" data-sw="Viungo vya Haraka">Quick Links</h4>
+                    <ul>
+                        <li><a href="#about" data-en="About Us" data-sw="Kuhusu Sisi">About Us</a></li>
+                        <li><a href="#what-we-do" data-en="What We Do" data-sw="Tunachofanya">What We Do</a></li>
+                        <li><a href="#products" data-en="Products" data-sw="Bidhaa">Products</a></li>
+                        <li><a href="#insights" data-en="Insights" data-sw="Ufahamu">Insights</a></li>
+                        <li><a href="#community" data-en="Community" data-sw="Jamii">Community</a></li>
+                        <li><a href="#contact" data-en="Contact" data-sw="Wasiliana">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4 data-en="Connect" data-sw="Unganisha">Connect</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Twitter/X">𝕏</a>
+                        <a href="#" aria-label="LinkedIn">in</a>
+                        <a href="#" aria-label="WhatsApp">💬</a>
+                    </div>
+                </div>
+                <div class="footer-newsletter">
+                    <h4 data-en="Newsletter" data-sw="Jarida">Newsletter</h4>
+                    <p data-en="Stay updated with our latest insights." data-sw="Pata sasisho za hivi punde za ufahamu wetu.">
+                        Stay updated with our latest insights.
+                    </p>
+                    <form class="newsletter-form footer-newsletter-form" id="footerNewsletterForm">
+                        <input type="email" placeholder="your@email.com" required aria-label="Email address">
+                        <button type="submit" class="btn btn-primary btn-sm" data-en="Sign Up" data-sw="Jisajili">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Biashara Intelligence. <span data-en="All rights reserved." data-sw="Haki zote zimehifadhiwa.">All rights reserved.</span></p>
+                <p class="footer-location">📍 Migori, Kenya</p>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </footer>
 
-  <!-- WHATSAPP COMMUNITY -->
-  <section class="section section--whatsapp" id="community">
-    <div class="container">
-      <div class="community fade-in">
-        <div class="community__icon">💬</div>
-        <h2 class="community__title" data-i18n="community.title" data-i18n-en="Join our WhatsApp community">Join our WhatsApp community</h2>
-        <p class="community__desc" data-i18n="community.desc" data-i18n-en="Connect with other market workers using Msaidizi. Share tips, ask questions, and help us build something that actually works for you.">
-          Connect with other market workers using Msaidizi. Share tips, ask questions, and help us build something that actually works for you.
-        </p>
-        <a href="https://chat.whatsapp.com/XXXXX" class="btn btn--whatsapp btn--lg" target="_blank" rel="noopener noreferrer">
-          <span class="btn__icon">💬</span>
-          <span data-i18n="community.btn" data-i18n-en="Join WhatsApp Group">Join WhatsApp Group</span>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section class="section section--alt" id="contact">
-    <div class="container">
-      <div class="section__header fade-in">
-        <span class="section__label" data-i18n="contact.label" data-i18n-en="Contact">Contact</span>
-        <h2 class="section__title" data-i18n="contact.title" data-i18n-en="Let's Talk">Let's Talk</h2>
-        <p class="section__desc" data-i18n="contact.desc" data-i18n-en="Partner, investor, journalist, or just curious — we'd love to hear from you.">
-          Partner, investor, journalist, or just curious — we'd love to hear from you.
-        </p>
-      </div>
-
-      <div class="contact__grid">
-        <a href="mailto:hello@msaidizi.com" class="contact__card fade-in">
-          <div class="contact__card-icon">📧</div>
-          <div>
-            <h3 data-i18n="contact.email.title" data-i18n-en="Email">Email</h3>
-            <p>hello@msaidizi.com</p>
-          </div>
-        </a>
-        <a href="https://wa.me/254XXXXXXXXX" class="contact__card fade-in" target="_blank" rel="noopener noreferrer">
-          <div class="contact__card-icon">💬</div>
-          <div>
-            <h3>WhatsApp</h3>
-            <p>+254 XXX XXX XXX</p>
-          </div>
-        </a>
-        <a href="https://twitter.com/msaidizi" class="contact__card fade-in" target="_blank" rel="noopener noreferrer">
-          <div class="contact__card-icon">🐦</div>
-          <div>
-            <h3>Twitter / X</h3>
-            <p>@msaidizi</p>
-          </div>
-        </a>
-        <a href="https://linkedin.com/company/biashara-ai" class="contact__card fade-in" target="_blank" rel="noopener noreferrer">
-          <div class="contact__card-icon">💼</div>
-          <div>
-            <h3>LinkedIn</h3>
-            <p>Biashara Intelligence</p>
-          </div>
-        </a>
-      </div>
-
-      <div class="contact__location fade-in">
-        <div class="contact__location-icon">📍</div>
-        <p data-i18n="contact.location" data-i18n-en="Migori, Kenya">Migori, Kenya</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer" role="contentinfo">
-    <div class="container">
-      <div class="footer__grid">
-        <div class="footer__brand">
-          <div class="footer__logo">
-            <span>📱</span>
-            <strong>Msaidizi</strong>
-          </div>
-          <p data-i18n="footer.desc" data-i18n-en="Free business assistant for Africa's market workers. Built with ❤️ in Migori, Kenya.">
-            Free business assistant for Africa's market workers. Built with ❤️ in Migori, Kenya.
-          </p>
-        </div>
-        <div class="footer__links">
-          <h4 data-i18n="footer.product" data-i18n-en="Product">Product</h4>
-          <ul>
-            <li><a href="#how" data-i18n="footer.how" data-i18n-en="How It Works">How It Works</a></li>
-            <li><a href="#workers" data-i18n="footer.features" data-i18n-en="Features">Features</a></li>
-            <li><a href="#download" data-i18n="footer.download" data-i18n-en="Download">Download</a></li>
-          </ul>
-        </div>
-        <div class="footer__links">
-          <h4 data-i18n="footer.company" data-i18n-en="Company">Company</h4>
-          <ul>
-            <li><a href="#about" data-i18n="footer.about" data-i18n-en="About Us">About Us</a></li>
-            <li><a href="#contact" data-i18n="footer.contact" data-i18n-en="Contact">Contact</a></li>
-            <li><a href="https://github.com/ovalentine964/biashara-intelligence" target="_blank" rel="noopener noreferrer" data-i18n="footer.github" data-i18n-en="GitHub">GitHub</a></li>
-          </ul>
-        </div>
-        <div class="footer__links">
-          <h4 data-i18n="footer.connect" data-i18n-en="Connect">Connect</h4>
-          <ul>
-            <li><a href="https://twitter.com/msaidizi" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
-            <li><a href="https://linkedin.com/company/biashara-ai" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-            <li><a href="https://chat.whatsapp.com/XXXXX" target="_blank" rel="noopener noreferrer" data-i18n="footer.whatsapp" data-i18n-en="WhatsApp Community">WhatsApp Community</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer__bottom">
-        <p>&copy; 2026 Biashara Intelligence. <span data-i18n="footer.rights" data-i18n-en="All rights reserved.">All rights reserved.</span></p>
-        <p class="footer__made" data-i18n="footer.made" data-i18n-en="Built in Migori for Africa's workers 🌍">Built in Migori for Africa's workers 🌍</p>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Scripts -->
-  <script src="swahili-content.js"></script>
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

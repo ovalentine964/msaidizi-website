@@ -1,43 +1,16 @@
 {
-  "name": "Msaidizi — Free Business Assistant for Market Workers",
-  "short_name": "Msaidizi",
-  "description": "Free voice-based business assistant for mama mbogas, dukawallahs, and market vendors. Track sales, profit, and debts in Swahili — offline.",
-  "start_url": "/",
-  "display": "standalone",
-  "background_color": "#0A0F1C",
-  "theme_color": "#D4AF37",
-  "orientation": "portrait",
-  "scope": "/",
-  "lang": "en",
-  "categories": ["business", "finance", "productivity"],
-  "icons": [
-    {
-      "src": "assets/icon-192.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "assets/icon-512.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any maskable"
-    }
-  ],
-  "screenshots": [
-    {
-      "src": "assets/screenshot.png",
-      "sizes": "1080x1920",
-      "type": "image/png",
-      "form_factor": "narrow",
-      "label": "Msaidizi chat interface showing sales tracking in Swahili"
-    }
-  ],
-  "shortcuts": [
-    {
-      "name": "Download Msaidizi APK",
-      "short_name": "Download",
-      "url": "/#download"
-    }
-  ]
+    "name": "Biashara Intelligence",
+    "short_name": "Biashara",
+    "description": "Economic Intelligence for Africa's Informal Economy",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#0a0a0f",
+    "theme_color": "#c8a44e",
+    "icons": [
+        {
+            "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◆</text></svg>",
+            "sizes": "any",
+            "type": "image/svg+xml"
+        }
+    ]
 }
