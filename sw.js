@@ -4,12 +4,11 @@
  */
 const CACHE_NAME = 'msaidizi-v1';
 const SHELL_ASSETS = [
-  '/',
-  '/index.html',
-  '/style.css',
-  '/script.js',
-  '/swahili-content.js',
-  '/manifest.json'
+  '/biashara-intelligence/',
+  '/biashara-intelligence/index.html',
+  '/biashara-intelligence/style.css',
+'/biashara-intelligence/script.js',
+  '/biashara-intelligence/manifest.json'
 ];
 
 // Install — cache app shell
@@ -71,7 +70,7 @@ self.addEventListener('fetch', function (event) {
       }).catch(function () {
         // Offline fallback for navigation
         if (event.request.mode === 'navigate') {
-          return caches.match('/index.html');
+          return caches.match('/biashara-intelligence/index.html');
         }
       });
     })

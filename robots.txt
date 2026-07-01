@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ovalentine964.github.io/biashara-intelligence/sitemap.xml
