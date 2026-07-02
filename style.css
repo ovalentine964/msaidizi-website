@@ -1544,3 +1544,178 @@ p {
         min-width: unset;
     }
 }
+
+/* ═══════════════════════════════════════════════════════════════
+   AI Agents Architecture Section
+   ═══════════════════════════════════════════════════════════════ */
+
+.ai-agents {
+    background: linear-gradient(180deg, #0a0a0a 0%, #0d1117 100%);
+}
+
+.agents-architecture {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-bottom: 4rem;
+}
+
+.agent-tier {
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.tier-header {
+    margin-bottom: 1.5rem;
+}
+
+.tier-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.tier-core .tier-badge {
+    background: rgba(59, 130, 246, 0.2);
+    color: #60a5fa;
+    border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+.tier-domain .tier-badge {
+    background: rgba(16, 185, 129, 0.2);
+    color: #34d399;
+    border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.tier-utility .tier-badge {
+    background: rgba(245, 158, 11, 0.2);
+    color: #fbbf24;
+    border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.tier-header h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #f0f0f0;
+    margin: 0 0 0.25rem;
+}
+
+.tier-header p {
+    color: #8b949e;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.agent-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 1rem;
+}
+
+.agent-card {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 12px;
+    padding: 1.25rem;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.agent-card:hover {
+    transform: translateY(-2px);
+    border-color: rgba(255, 255, 255, 0.15);
+}
+
+.agent-icon {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.agent-card h4 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #e6edf3;
+    margin: 0 0 0.35rem;
+}
+
+.agent-card p {
+    font-size: 0.8rem;
+    color: #8b949e;
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* How It Works */
+.agents-how {
+    text-align: center;
+}
+
+.agents-how h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #f0f0f0;
+    margin-bottom: 2rem;
+}
+
+.agents-how-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.how-step {
+    text-align: center;
+}
+
+.how-num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #3b82f6, #10b981);
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.how-step h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #e6edf3;
+    margin: 0 0 0.5rem;
+}
+
+.how-step p {
+    font-size: 0.9rem;
+    color: #8b949e;
+    line-height: 1.5;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .agent-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .agents-how-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    .agent-tier {
+        padding: 1.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .agent-cards {
+        grid-template-columns: 1fr;
+    }
+}
