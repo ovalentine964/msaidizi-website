@@ -49,7 +49,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
-- Initial website structure
-- GitHub Pages deployment
-- Mobile responsive design
-- Product showcase sections
+- **Our Infrastructure section** — data center roadmap (Cloud → ARM → Mini DC → Pan-African DC)
+- **AI In-House section** — on-device LLM, cost comparison, Qwen 0.5B via llama.cpp
+- **Privacy First section** — federated learning, differential privacy (ε=0.1), k-anonymity (k≥5)
+- New navigation links for Infrastructure, AI In-House, Privacy sections
+- Bilingual Swahili/English support for all new sections
+
+### Changed
+- Footer quick links updated with new sections
